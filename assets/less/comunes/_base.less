@@ -1,61 +1,75 @@
-
-/*------CORE--------*/
+/*====== core ======*/
 @import 'comunes/variables';
 @import 'comunes/mixins';
 
-
 /*====== font color ======*/
 .fc-blanco{
-    color: @blanco;
+  color: @blanco;
 }
-
 .fc-gris{
-    color: @gris;
+  color: @gris;
+}
+.fc-azul{
+  color: #00358E;
 }
 
 /*====== font weight ======*/
 .fw-xs{
-    font-weight: 300;
+  font-weight: 300;
 }
 .fw-sm{
-    font-weight: 500;
+  font-weight: 500;
 }
 .fw-md{
-    font-weight: 700;
+  font-weight: 700;
 }
 .fw-lg{
-    font-weight: 900;
+  font-weight: 900;
 }
 
 /*====== font size ======*/
 .fs-xs{
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 .fs-sm{
-    font-size: 2.3rem;
+  font-size: 2.3rem;
 }
 .fs-md{
-    font-size: 3rem;
+  font-size: 3rem;
 }
 .fs-lg{
-    font-size: 3.3em;
+  font-size: 3.3em;
 }
 
-
+/*====== font align ======*/
 .txa-center{
-    text-align: center;
+  text-align: center;
 }
 .txa-left{
-    text-align: left;
+  text-align: left;
 }
+.txa-right{
+  text-align: right;
+}
+
+/*====== font family ======*/
 .ff-oswald{
-   // font-family: 'Oswald', sans-serif;
+  // font-family: 'Oswald', sans-serif;
 }
 
-
-.fc-azul{
-    color: #00358E;
-}
+/*====== font transform ======*/
 .tt-up{
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+/*====== Bootstrap ======*/
+// center col
+.row-center{
+  display: table;
+  height: 100%;
+  > div{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
 }
